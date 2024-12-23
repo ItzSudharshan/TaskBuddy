@@ -1,0 +1,59 @@
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: black; /* Deep navy for a modern look */
+    color: #e4e4e4; /* Light gray for text contrast */
+  }
+  
+  #inp {
+    display: flex;
+    gap: 10px;
+  
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffdf8b; /* Brand color for the header */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  #vishnu {
+    display: flex;
+    gap: 10px;
+  
+  }
+  #btns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .task-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .task-form input,
+  .task-form select,
+  .task-form button {
+    padding: 10px;
+    border: 2px solid #6c757d; /* Neutral border */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background for inputs */
+    color: #333; /* Dark text for readability */
+    font-size: 1rem;
+  }
+  
+  .task-form button {
+    background-color:  #5df7d8; /* Green for action buttons */
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-form button:hover {
+    background-color: #5df79b; /* Slightly darker green on hover */
+  }
