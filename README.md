@@ -1,6 +1,7 @@
 # TaskBuddy - Task Management Application
 
-![TaskBuddy Banner](https://via.placeholder.com/1000x300?text=TaskBuddy+-+Manage+Your+Tasks+Efficiently)
+![TaskBuddy Banner](![image](https://github.com/user-attachments/assets/38961f6a-6662-4c26-8baa-6b433a0c0c61)
+)
 
 ## 🚀 TaskBuddy - Your Ultimate Task Management Solution
 
