@@ -5,17 +5,15 @@ import TaskList from "./Components/TaskList";
 import ProgressTracker from "./Components/ProgressTracker";
 
 function App() {
-  const [tasks, setTasks] = useState(() => {
-    const savedTasks = localStorage.getItem("tasks");
-    return savedTasks ? JSON.parse(savedTasks) : [];
-  }); // Retrieves tasks from localStorage on first load
+  const [tasks, setTasks] = useState([]);
+  const [taskHistory, setTaskHistory] = useState([]);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
-  const addTask = (task) => {
-    setTasks([...tasks, task]);
+  const addTask = (task)=>{
+    setTasks([...tasks,task])
   };
 
   const updateTask = (index, updatedTask) => {
@@ -31,22 +29,30 @@ function App() {
   const clearTasks = () => {
     setTasks([]);
   };
-
   return (
-    <div className="App">
-      <h1>TaskBuddy</h1>
-      <Taskform addTask={addTask} />
-      <TaskList 
+    <div className='App'>
+      <header class="header">
+  <div class="header-container">
+    <h1 class="title">
+      Task<span class="highlight">Buddy</span>
+    </h1>
+    <p class="tagline">Your friendly task manager</p>
+  </div>
+</header>
+      <Taskform   addTask = {addTask} />
+      <TaskList
         tasks={tasks}
         updateTask={updateTask}
-        deleteTask={deleteTask} />
+        deleteTask={deleteTask}
+      />
       <ProgressTracker tasks={tasks} />
 
-      {tasks.length > 0 && (
+      {tasks.length>0 && (
         <button className="clear-btn" onClick={clearTasks}>
           Clear All Tasks
         </button>
-      )}
+       )}
+
     </div>
   );
 }
