@@ -1,6 +1,7 @@
 # TaskBuddy - Task Management Application
 
-![TaskBuddy Banner](https://github.com/user-attachments/assets/1e9a4990-1802-4576-98da-277bfdbe9d05)
+![TaskBuddy Banner](![TaskBuddy](https://github.com/user-attachments/assets/aadfbffb-d2f0-462d-8de9-fe1132a26b4b)
+)
 
 ## 🚀 TaskBuddy - Your Ultimate Task Management Solution
 
